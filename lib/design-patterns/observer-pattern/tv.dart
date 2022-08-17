@@ -7,9 +7,9 @@ class TvDisplay implements IObserver {
   TvDisplay(this.weatherStaion);
 
   @override
-  void update() {
+  void update(temp) {
     print(weatherStaion.clock);
-    print('Tv: ${weatherStaion.textTemp}');
+    print('Tv: $temp');
 
     if (weatherStaion.full) {
       weatherStaion.remove(this);

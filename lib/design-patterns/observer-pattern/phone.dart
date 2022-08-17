@@ -7,7 +7,7 @@ class PhoneDisplay implements IObserver {
   PhoneDisplay(this.weatherStaion);
 
   @override
-  void update() {
+  void update(temp) {
     print('Smart Phone: ${weatherStaion.temp}');
   }
 }

@@ -1,3 +1,3 @@
 abstract class IObserver {
-  void update();
+  void update(double temp);
 }

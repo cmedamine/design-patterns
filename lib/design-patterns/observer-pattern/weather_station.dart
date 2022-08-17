@@ -57,7 +57,7 @@ class WeatherStaion implements IObserveble {
   @override
   void notify() {
     for (var observer in observers) {
-      observer.update();
+      observer.update(temp);
     }
   }
 
