@@ -1,12 +1,13 @@
-
 import 'duck.dart';
 import 'duck_behaviors_impl.dart';
 
 void main() {
-
-  final cityDuck = Duck('city duck',  SimpleDisplay(), SimpleFlyBehavior(), Quack());
-  final cloudDuck = Duck('cloud duck',SimpleDisplay(), SimpleFlyBehavior(), Quack());
-  final rubberDuck = Duck('rubber duck',DisplayAsText(), SimpleFlyBehavior(), Quack());
+  final cityDuck =
+      Duck('city duck', SimpleDisplay(), SimpleFlyBehavior(), Quack());
+  final cloudDuck =
+      Duck('cloud duck', SimpleDisplay(), SimpleFlyBehavior(), Quack());
+  final rubberDuck =
+      Duck('rubber duck', DisplayAsText(), SimpleFlyBehavior(), Quack());
 
   cityDuck.fly();
   cityDuck.display();
@@ -18,9 +19,6 @@ void main() {
 
   rubberDuck.display();
 
-  print(cityDuck.duckName);
-  
+  print(cityDuck.name);
+
 }
-
-
-
